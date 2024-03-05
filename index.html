@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Trabajo Práctico - Visualización de Datos</h1>
+      <h4>Nombre: Kevin Paul Franco Moran</h4>
+    </main>
+      <p> Este trabajo práctico tiene como objetivo explorar un dataset de datos de futbol de goles realizados en partidos desde el año 1916 hasta el año 2024.</p>
+      <p>Se busca poder visualizar el comportamiento de las principales selecciones goleadoras, y poder evaluar la información de los dos más grandes campeones mundiales Brasil y Alemania durante los años en que respectivamente quedaron campeones.</p>
+      <p> Nuestros datos contienen el tiempo en el que se genero cada anotación tambien vamos a usar esta información para poder inferir en que minutos existe la mayor posibilidad de generar goles en un partido.</p>
+      <p> Este trabajo busca verificar si la cantidad de goles influye directamente en ganar o no el campeonato mundial.</p>
+
+    <h3>Top 10: Países mas goledores</h3>
+
+    <p> El primer gráfico nos muestra los 10 países con mayor cantidad de goles anotados. Nuestra lista es encabezada por Brasil con 982 goles, también es el país con mayor cantidad de campeonatos mundiales a la fecha. En segundo lugar tenemos a Alemania que en conjunto con Italia (decimo lugar) comparten el puesto 2 en el ranking de campeones mundiales. En tercer lugar tenemos a Argentina la ultima selección campeona del mundo en el año 2022 con 881 goles.</p>
+
+    <img src="Top10_paises.png" alt="Top 10">
+
+    <p> Es interesante observar que a pesar de que Brasil no ha sido campeona del mundo en los ultimos 20 años (5 mundiales) mantiene una notable diferencia de goles con respecto a la segunda posición de este ranking, lo cual remarca su constancia dentro de las competenecias a nivel mundial.</p>
+
+    <h3> Distribución de goles anotados por años de la selección brasileña</h3>
+
+    <p> El comportamiento de goles anotados de la selección brasileña no ha sido constante durante todos los años, se eligió este gráfico para poder visualizar su comportamiento y poder observar si existe una relación entre los años en que la selección ha quedado campeona y los picos de goles marcados en nuestra visualización.</p>
+
+    <p> Años en los que Brasil ha sido campeón mundial: 1958, 1962, 1970, 1994 y 2002</p>
+
+    <img src="Brasil_golesporanio.png" alt="Brasil Goles por Año">
+
+    <p> Se puede observar que si existe una mayor cantidad de goles marcados en los años cercanos y posteriores, lo que indica que la selección estos años tuvo un mayor rendimiento lo que lo llevo al campeonato mundial. Sin embargo a pesar de que posterior al 2002 el rendimiento de brasil no ha decaido, considerando la cantidad de goles marcado, no ha logrado posicionarse como campeón. </p>
+
+    <p> Sin embargo este rendimiento en goles dentro de los ultimos año, se ve reflejado en las posiciones que ha mantenido dentro de los mundiales, en los cuales minimo ha marcado 8 goles y ha ingresado a disputar los cuartos de final, manteniendo posiciones entre 4 y 7 a nivel mundial dentro de esta competencia. </p>
+
+    <h3> Numero de goles por año es lo que la selección de Brasil fue campeona del mundo</h3>
+
+    <p> Con esta grafica se busca explorar a mayor detalle la estadisticas de los goles marcados durante los años de la copa del mundo para conocer la cantidad de goles requeridos por la selección para su campeonato mundial, y posteriormente compararemos esta información con Alemania que se encuentra en segundo lugar del ranking. </p>
+
+    <img src="Brasil_campeon.png" alt="Goles en año del campeonato mundial">
+   
+    <p> Mínimo Brasil anoto 10 goles por mundial ganado, el promedio de goles para los 5 campeonatos ronde en 15 goles por mundial, lo cual significa que Brazil anoto aproximadamente 2 goles por partido, considerando que en un mundial se juegan 7 partidos para poder quedar campeón. Ninguno de los goles anotados se genero por autogol.</p>
+
+    <h3> Numero de goles por año es lo que la selección Alemana fue campeona del mundo</h3>
+    
+    <img src="Alemania_campeon.png" alt="Goles en año del campeonato mundial">
+
+    <p> En comparación a Brasil, Alemania tienes mas variación en la cantidad de goles, su promedio de anotaciones es de 20 goles por campeonato, 5 más que Brasil, el promedio por partido tambien aumenta a 2,85 goles, un gol mas en promedio que Brasil cada partido. </p>
+
+    <p> Sin embargo, Italia país que se encuentra en el 10 lugar de países goleadores, tiene la misma cantidad de campeonatos mundiales que Alemania. Por lo que la cantidad de anotaciones, a pesar que es necesaria para ganar un campeonato, el exito dentro de estas competiciones se rige en la estabilidad a lo largo de todos los partidos en los que se disputa. </p>
+    
+    <h3> Goles por minuto</h3>
+
+    <p> El siguiente grafico tiene como objetivo realizar una representación de los minutos en los que se presenta la mayor probabilidad de gol en los partidos.</p>
+
+    <img src="Goles_minuto.png" alt="Goles en año del campeonato mundial">
+
+    <p> Es facil observar que la mayor probabilidad de goles se concentra al final del segundo tiempo a los 90 minutos de partido. Sin embargo es interesante observar, que aunque en menor medida, a los ultimos minutos del primer tiempo se genera un pico de cantidad de goles marcados.</p>
+
+    <p> Factores físicos como el cansancio o factores psicológicos como un aumento en la confianza de que el marcador no puede ser movido, o el efecto contrario un arranque de fuerzas para conseguir el tanto ganador, generan que la mayor probabilidad de un gol se centre el final de cada una de las mitades de un partido.</p>
+
+  </body>
+
+  <body>
+    <h3> Links </h3>
+    <h4>
+      Dataset: <a href="https://drive.google.com/file/d/1Oamk9ht9hTANaGpiF2VRmMD9zxUHgIKG/view?usp=sharing"> https://drive.google.com/file/d/1Oamk9ht9hTANaGpiF2VRmMD9zxUHgIKG/view?usp=sharing</a>
+    </h4>
+    <h4>
+    Google Colab: <a href="https://colab.research.google.com/drive/107tQ3BoXrs6T5YXC1jM9I7akm25E7yEg?usp=sharing"> https://colab.research.google.com/drive/107tQ3BoXrs6T5YXC1jM9I7akm25E7yEg?usp=sharing</a>
+    </h4>
+    <h4>
+      Stackblitz: <a href="https://stackblitzstarterscbclht-vy3f--8080--c9a8a620.local-credentialless.webcontainer.io"> https://stackblitzstarterscbclht-vy3f--8080--c9a8a620.local-credentialless.webcontainer.io</a>
+      </h4>
+      
+  </body>
+</html>
